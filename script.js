@@ -245,8 +245,9 @@ function switchSection(sectionId) {
     updateMusicBackground();
   }
 
-  // Scroll to top
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // Scroll to top - use auto on mobile to prevent jump
+  const isMobile = window.innerWidth <= 768;
+  window.scrollTo({ top: 0, behavior: isMobile ? "auto" : "smooth" });
 }
 
 // ============================================
