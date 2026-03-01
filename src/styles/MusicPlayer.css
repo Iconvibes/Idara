@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  color: white;
+  color: black;
 }
 
 @keyframes albumSpin {
@@ -49,7 +49,7 @@
 }
 
 .song-info h3 {
-  color: white;
+  color: black;
   font-size: 1.3rem;
   margin-bottom: 5px;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -112,7 +112,7 @@
 .time-display {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: rgb(86, 65, 65);
   font-size: 0.9rem;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
@@ -199,7 +199,7 @@
 }
 
 .playlist h3 {
-  color: white;
+  color: rgb(47, 36, 36);
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -220,7 +220,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: white;
+  color: rgb(60, 51, 51);
 }
 
 .playlist-item:hover {
