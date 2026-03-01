@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 html,
@@ -455,6 +456,7 @@ body {
   z-index: 50;
   min-height: 100vh;
   overflow-y: auto;
+  contain: layout;
 }
 
 .section {
@@ -462,6 +464,8 @@ body {
   opacity: 0;
   animation: fadeIn 0.6s ease-in-out forwards;
   position: relative;
+  will-change: opacity;
+  contain: layout style paint;
 }
 
 .section.active {
@@ -483,6 +487,10 @@ body {
 
 #music {
   transition: background-image 0.6s ease-out;
+}
+
+#gallery {
+  scroll-margin-top: 100px;
 }
 
 .section-title {
@@ -1045,6 +1053,8 @@ body {
   padding: 40px 20px;
   position: relative;
   overflow: hidden;
+  min-height: 20vh;
+  contain: layout;
 }
 
 .gallery-grid {
@@ -1053,6 +1063,7 @@ body {
   gap: 25px;
   animation: fadeIn 0.8s ease-out;
   width: 100%;
+  contain: layout;
 }
 
 .gallery-item {
